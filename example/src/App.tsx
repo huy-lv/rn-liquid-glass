@@ -14,28 +14,15 @@ import {
   LiquidGlassContainerView,
   isLiquidGlassSupported,
   type LiquidGlassViewProps,
-} from '@callstack/liquid-glass';
+} from 'liquidglassview';
 import { useEffect, useState } from 'react';
-import * as DropdownMenu from 'zeego/dropdown-menu';
+// import * as DropdownMenu from 'zeego/dropdown-menu';
 
 function DropdownMenuButton({ title }: { title?: string }) {
   return (
-    <DropdownMenu.Root>
-      <DropdownMenu.Trigger>
-        <Text style={styles.dropdownTrigger}>{title}</Text>
-      </DropdownMenu.Trigger>
-      <DropdownMenu.Content>
-        <DropdownMenu.Item key="first">
-          <DropdownMenu.ItemTitle>First</DropdownMenu.ItemTitle>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item key="second">
-          <DropdownMenu.ItemTitle>Second</DropdownMenu.ItemTitle>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item key="third">
-          <DropdownMenu.ItemTitle>Third</DropdownMenu.ItemTitle>
-        </DropdownMenu.Item>
-      </DropdownMenu.Content>
-    </DropdownMenu.Root>
+    <Pressable>
+      <Text style={styles.dropdownTrigger}>{title}</Text>
+    </Pressable>
   );
 }
 

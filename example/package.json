@@ -1,5 +1,5 @@
 {
-  "name": "@callstack/liquid-glass-example",
+  "name": "liquidglassview-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -16,8 +16,7 @@
     "react-native": "0.81.4",
     "react-native-ios-context-menu": "3.2.1",
     "react-native-ios-utilities": "5.2.0",
-    "react-native-safe-area-context": "^5.5.2",
-    "zeego": "^3.0.6"
+    "react-native-safe-area-context": "^5.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
